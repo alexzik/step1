@@ -1,0 +1,1 @@
+curl -i -X PUT -d "http://localhost:8888/city/1" -H "Content-Type:text/uri-list" http://localhost:8888/person/2/city

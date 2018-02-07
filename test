@@ -1,0 +1,8 @@
+	@Entity
+	public class City {
+		@Id private long id;
+		private String name;
+		@OneToMany(mappedBy="City")
+		private Collection<person> name;
+// ...
+	}
