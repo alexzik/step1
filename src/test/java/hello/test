@@ -1,0 +1,45 @@
+{
+  "_links" : {
+    "people" : {
+      "href" : "http://192.168.13.214:8888/people{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://:8888/profile"
+    }
+  }
+}
+
+
+
+
+
+curl http://http://192.168.13.214:8888/people
+{
+  "_links" : {
+    "self" : {
+      "href" : "http://192.168.13.214:8888/people{?page,size,sort}",
+      "templated" : true
+    },
+    "search" : {
+      "href" : "http://192.168.13.214:8888/people/search"
+    }
+  },
+  "_embedded" : {
+    "persons" : [ {
+      "firstName" : "Frodo",
+      "lastName" : "Baggins",
+      "_links" : {
+        "self" : {
+          "href" : "http://192.168.13.214:8888/people/1"
+        }
+      }
+    } ]
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 1,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
